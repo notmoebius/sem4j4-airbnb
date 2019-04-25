@@ -7,6 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
+Dog.destroy_all
+Dogsitter.destroy_all
+City.destroy_all
+Stroll.destroy_all
+
 # seed dog
 20.times do
   Dog.create!(
